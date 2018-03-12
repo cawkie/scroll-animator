@@ -1,0 +1,37 @@
+body{
+    height: 12000px;
+}
+#screen {
+    margin:10%;
+    width: 80%;
+    overflow: hidden;
+    height: 0;
+    padding-top: 56.25%;
+    background-color: bisque;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right: 0;
+}
+
+#thing1{
+    width: 10%;
+    height: 10%;
+    background-image: url(images/apple.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -100px;
+    left: -100px;
+    position: absolute;
+}
+#thing2{
+    width: 10%;
+    height: 10%;
+    background-image: url(images/orange.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -100px;
+    left: 100px;
+    position: absolute;
+}

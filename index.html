@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scroll Animator</title>
+
+    <link rel="stylesheet" href="scrollanimator.css">
+
+    <script type="text/javascript" src="scrollanimator.js"></script>
+</head>
+<body>
+
+<div id="screen">
+    <div id="thing1"></div>
+    <div id="thing2"></div>
+</div>
+
+<script>
+
+    console.log(document.getElementById('thing1'));
+    var sa1 = new ScrollAnimator({
+        container: document.getElementById('screen'),
+        scrollMeter: true,
+        defaultStep: 100,
+        actions: [
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 0,
+                endScroll: 5000,
+                changes: [
+                    {property: 'left', startValue: -25, endValue: 100, unit: '%'},
+                    {property: 'top', startValue: -25, endValue: 100, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 0,
+                endScroll: 5000,
+                changes: [
+                    {property: 'left', startValue: 100, endValue: -25, unit: '%'},
+                    {property: 'top', startValue: -25, endValue: 100, unit: '%'}
+                ]
+            },
+
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 0,
+                endScroll: 5000,
+                changes: [
+                    {property: 'left', startValue: -25, endValue: 100, unit: '%'},
+                    {property: 'top', startValue: -25, endValue: 100, unit: '%'}
+                ]
+            },
+
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 5000,
+                endScroll: 10000,
+                changes: [{property: 'top', startValue: -25, endValue: 100, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 5000,
+                endScroll: 5999,
+                set: [{property: 'z-index', value: 1}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 5000,
+                endScroll: 6000,
+                changes: [{property: 'left', startValue: 25, endValue: 50, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 6000,
+                endScroll: 6999,
+                set: [{property: 'z-index', value: 5}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 6000,
+                endScroll: 7000,
+                changes: [{property: 'left', startValue: 50, endValue: 25, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 7000,
+                endScroll: 7999,
+                set: [{property: 'z-index', value: 1}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 7000,
+                endScroll: 8000,
+                changes: [{property: 'left', startValue: 25, endValue: 50, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 8000,
+                endScroll: 8999,
+                set: [{property: 'z-index', value: 5}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 8000,
+                endScroll: 9000,
+                changes: [{property: 'left', startValue: 50, endValue: 25, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 9000,
+                endScroll: 9999,
+                set: [{property: 'z-index', value: 1}]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 9000,
+                endScroll: 10000,
+                changes: [{property: 'left', startValue: 25, endValue: 50, unit: '%'}]
+            },
+
+
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 5000,
+                endScroll: 10000,
+                changes: [{property: 'top', startValue: -25, endValue: 100, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 5000,
+                endScroll: 5999,
+                set: [{property: 'z-index', value: 5}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 5000,
+                endScroll: 6000,
+                changes: [{property: 'left', startValue: 50, endValue: 25, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 6000,
+                endScroll: 6999,
+                set: [{property: 'z-index', value: 1}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 6000,
+                endScroll: 7000,
+                changes: [{property: 'left', startValue: 25, endValue: 50, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 7000,
+                endScroll: 7999,
+                set: [{property: 'z-index', value: 5}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 7000,
+                endScroll: 8000,
+                changes: [{property: 'left', startValue: 50, endValue: 25, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 8000,
+                endScroll: 8999,
+                set: [{property: 'z-index', value: 1}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 8000,
+                endScroll: 9000,
+                changes: [{property: 'left', startValue: 25, endValue: 50, unit: '%'}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 9000,
+                endScroll: 9999,
+                set: [{property: 'z-index', value: 5}]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 9000,
+                endScroll: 10000,
+                changes: [{property: 'left', startValue: 50, endValue: 25, unit: '%'}]
+            },
+
+
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 4500,
+                endScroll: 5000,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 5000,
+                endScroll: 5500,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 5500,
+                endScroll: 6000,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 6000,
+                endScroll: 7500,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 7500,
+                endScroll: 8000,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 8000,
+                endScroll: 8500,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 8500,
+                endScroll: 9000,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 9000,
+                endScroll: 9500,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing1'),
+                startScroll: 9500,
+                endScroll: 10000,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+
+
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 4500,
+                endScroll: 5000,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 5000,
+                endScroll: 5500,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 5500,
+                endScroll: 6000,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 6000,
+                endScroll: 7500,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 7500,
+                endScroll: 8000,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 8000,
+                endScroll: 8500,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 8500,
+                endScroll: 9000,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 9000,
+                endScroll: 9500,
+                changes: [
+                    {property: 'width', startValue: 10, endValue: 20, unit: '%'},
+                    {property: 'height', startValue: 10, endValue: 20, unit: '%'}
+                ]
+            },
+            {
+                target: document.getElementById('thing2'),
+                startScroll: 9500,
+                endScroll: 20000,
+                changes: [
+                    {property: 'width', startValue: 20, endValue: 10, unit: '%'},
+                    {property: 'height', startValue: 20, endValue: 10, unit: '%'}
+                ]
+            },
+
+        ]
+    });
+</script>
+
+</body>
+</html>
